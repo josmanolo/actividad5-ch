@@ -1,0 +1,17 @@
+html
+    head
+        link(rel="stylesheet", href="style.css") 
+    body 
+        main
+            h1="Ingresa Producto"
+            table
+                tr 
+                    th="Nombre"
+                    th="Precio"
+                    th="Thumbnail"
+                each val in list
+                    tr
+                        td=val.name
+                        td=val.price
+                        td
+                            img(src=val.thumbnail)   

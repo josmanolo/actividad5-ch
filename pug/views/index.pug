@@ -1,0 +1,17 @@
+html
+    head
+        link(rel="stylesheet", href="style.css") 
+    body 
+        main
+            h1="Ingresa Producto"
+            form(action="/products", method="post")
+                section 
+                    label="Nombre"
+                    input(type="text", name="name")
+                section 
+                    label="Precio"
+                    input(type="text", name="price")
+                section 
+                    label="URL Foto"
+                    input(type="text", name="thumbnail")
+                input(type="submit", value="Enviar")
